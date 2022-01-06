@@ -1,20 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="../images/favicon-16x16.png">
         <link href="../styles/index.css" rel="stylesheet">
         <meta charset="UTF-8">
         <title>Pigs</title>
     </head>
     <body>
-        <nav class="nav">
-            <img src="images/Sample_Pig.png" alt="" class="nav__image" />
-            <div>
-                <a href="about.html" class="nav__text">About Us</a>
-                <a href="donate.html" class="nav__text">Donate</a>
-                <a href="plog.html" class="nav__text">Plog Page</a>
+
+        <!-- Blurred background image behind all content -->
+        <div class="background-image">
+
+            <!-- Separate container for nav and main (so that background blur will not affect main content) -->
+            <div class="no-blur">
+                <nav class="nav">
+                    <img class="nav__image" src="../images/pwing-logo-words.png" alt="pwing logo">
+                    <div>
+                        <a href="about.html" class="nav__text">About Us</a>
+                        <a href="plog.html" class="nav__text">Plog Page</a>
+                        <a href="donate.html" class="nav__text">Donate</a>
+                    </div>
+                </nav>
+
+                <main class="main">
+                    <hr class="main__break-line"/>
+                    <h1 class="main__header-1">Let's help pigs fly!</h1>
+                    <p class="main__text">Join us in our fight against pig oppression, and help us give pigs wings!</p>
+                    <p class="main__text">Wings. Flight. Freedom.</p>
+                    <hr class="main__break-line"/>
+                </main>
+
             </div>
-        </nav>
+            <!-- / Separate container for nav and main -->
+
+        </div>
+        <!-- / Blurred background image-->
     </body>
 </html>
 
