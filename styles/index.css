@@ -23,13 +23,11 @@ body {
     opacity: .5;
     position: absolute;
     width: 100%;
-    /* margin-top: 70px; */
 }
 
 .no-blur {
     position: relative;
     z-index: 1;
-    /* background-color: grey; */
 }
 
 nav {
@@ -41,9 +39,9 @@ nav {
 }
 
 .nav__image {
-    width: 250px;
-    margin-top: 20px;
+    width: 195px;
     margin-left: 10px;
+    align-self: center;
 }
 
 .nav__text {
@@ -51,10 +49,15 @@ nav {
     text-decoration: none;
     /* color: #f7b5b5; */
     color: white;
-    font-size: 28px;   
+    font-size: 23px;   
     font-weight: 300;
     letter-spacing: .03em;
-    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    padding: 10px;
+}
+
+.nav__text:hover {
+    background: rgb(78, 76, 76);
+    border-radius: 5px;
 }
 
 .main {
@@ -77,12 +80,40 @@ nav {
     letter-spacing: .02em;
     text-align: center;
     font-weight: 300;
-    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 
 .main__text {
     font-size: 27px;
-    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
     font-weight: 400;
     text-align: center;
 }
+
+/* .nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: grey;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    opacity: .7;
+}
+
+.nav__image {
+    width: 150px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.nav__text {
+    margin-right: 35px;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;   
+    font-weight: 300;
+    letter-spacing: .03em;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    padding: 10px;
+}  */
