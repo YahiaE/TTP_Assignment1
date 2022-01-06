@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="shortcut icon" type="image/png" href="../images/favicon-16x16.png">
         <meta charset="UTF-8">
-        <title>title</title>
-        <link href="index.css" rel="stylesheet">
+        <title>Plog Page</title>
+        <link href="../styles/plog.css" rel="stylesheet">
     </head>
 
-    <body>
+    <script>
+        function post() {
+            input.innerText
+            //finish this function, look up innerText, pull input from chatbox (textarea) and post it to post window
+        }
+        document.getElementById("input__box")
+    </script>
 
+    <body>
+        <nav class="nav">
+            <!-- <img src="../images/oink.png" alt="" class="nav__image" /> -->
+            <div>
+                <a href="index.html" class="nav__text">Home</a>
+                <a href="about.html" class="nav__text">About Us</a>
+                <a href="donate.html" class="nav__text">Donate</a>
+            </div>
+        </nav>
+
+        <div class="chat">
+            <div class="post__window">
+                <h1>stuff</h1>
+            </div>
+
+            <div class="msg__window" id="input__box">
+                <h1 class="chat-header">Chat</h1>
+                <textarea class="chat__box" placeholder="Type message.." required></textarea>
+
+                <button type="submit" class="btn">Oink</button>        
+            </div>
+        </div>
     </body>
 </html>
