@@ -1,0 +1,23 @@
+body {
+    background-color: #e87979;
+    margin: 0;
+}
+
+nav {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.nav__image {
+    size: 400px;
+}
+
+.nav__text {
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(173, 76, 76);
+}
