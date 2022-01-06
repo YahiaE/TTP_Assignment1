@@ -1,11 +1,37 @@
+html {
+    font-size: 16px;
+}
+
 body {
-    background-color: #e87979;
     margin: 0;
+    background-color: #e87979;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.background-image::before {
+    content: "";
+    background-image: url("../images/pig-pic.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: sticky;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    filter: blur(2px);
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+}
+
+.no-blur {
+    position: relative;
+    z-index: 1;
 }
 
 nav {
-    background-color: white;
-    height: 60px;
+    height: 90px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -13,12 +39,81 @@ nav {
 }
 
 .nav__image {
-    size: 400px;
+    width: 195px;
+    margin-left: 10px;
+    align-self: center;
 }
 
 .nav__text {
-    margin-right: 10px;
+    margin-right: 35px;
     text-decoration: none;
-    color: rgb(173, 76, 76);
+    /* color: #f7b5b5; */
+    color: white;
+    font-size: 23px;   
+    font-weight: 300;
+    letter-spacing: .03em;
+    padding: 10px;
 }
 
+.nav__text:hover {
+    background: rgb(78, 76, 76);
+    border-radius: 5px;
+}
+
+.main {
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main__break-line {
+    border: none;
+    height: 3px;
+    background-color: white;
+}
+
+.main__header-1 {
+    font-size: 65px;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.main__text {
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* .nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: grey;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    opacity: .7;
+}
+
+.nav__image {
+    width: 150px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.nav__text {
+    margin-right: 35px;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;   
+    font-weight: 300;
+    letter-spacing: .03em;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    padding: 10px;
+}  */
