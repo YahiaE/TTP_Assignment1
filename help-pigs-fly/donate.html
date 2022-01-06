@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/png" href="../images/favicon-16x16.png">
+		<link href="../styles/donate.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<title>Donate!</title>
+		<script src="../js/donate.js"></script>
+	</head>
+	<body>
+
+		<nav class="nav">
+			<img class="nav__image" src="../images/pwing-logo-words.png" alt="pwing logo">
+			<div>
+				<a href="index.html" class="nav__text">Home</a>
+				<a href="donate.html" class="nav__text">About Us</a>
+				<a href="plog.html" class="nav__text">Plog Page</a>
+			</div>
+		</nav>
+		
+		<main class = "main">
+
+			<div class = "main__titles">
+				<h1 class = "main__titles__header">It Takes More Than Red Bull To Fly</h1>
+				<h2 class = "main__titles__subtitle">By donating $1 or more, you can help a pig get one step closer to flight!</h2>
+			</div>
+
+			<div class="donation_money">
+				<h1 class = "donation_money__text">Total Money Donated: </h1>
+				<h1 class = "donation_money__text">$0</h1>
+			</div>
+
+
+			<div class = "donation_form">
+				<div class="donation_form__title"><h2>Donation Information</h2></div>
+				<div class = "donation_form__input">
+					<div class = "donation_form__input__text">
+						<input type="text" id="firstName" placeholder="First Name"> </input>
+						<input type="text" id="lastName" placeholder="Last Name"> </input>
+						<input type="text" id="email" placeholder="Email"> </input>
+					</div>
+
+					<div class="donation_form__input__slider">
+						<h3><em>Donation Amount</em></h3>
+						<input type="range" min="1" max="100" value="1"   oninput="rangeValue.innerText = '$' + this.value">
+						<p id="rangeValue">$1</p>
+					</div>
+
+
+					<button class = "donation_form__button" onclick = "increment()">Donate!</button>
+					
+				</div>
+
+
+			</main>
+			
+			
+			
+		</body>
+	</html>
