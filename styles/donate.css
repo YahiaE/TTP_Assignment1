@@ -13,8 +13,7 @@ body {
 
 
 
-.nav {
-	background: rgba(125, 125, 125, 0.4);
+nav {
     height: 90px;
     display: flex;
     align-items: center;
@@ -24,16 +23,24 @@ body {
 
 .nav__image {
     width: 195px;
-    margin-left:10px;
+    margin-left: 10px;
+    align-self: center;
 }
 
 .nav__text {
     margin-right: 35px;
     text-decoration: none;
+    /* color: #f7b5b5; */
     color: white;
-    font-size: 28px;   
+    font-size: 23px;   
     font-weight: 300;
     letter-spacing: .03em;
+    padding: 10px;
+}
+
+.nav__text:hover {
+    background: rgb(78, 76, 76);
+    border-radius: 5px;
 }
 
 .main {
