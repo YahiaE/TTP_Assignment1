@@ -53,7 +53,7 @@ nav {
     margin: auto;
     text-transform: uppercase;
     text-align: right;
-    max-width: 490px;
+    width: 555px;
 }
 
 .intro__header-1 {
@@ -76,10 +76,60 @@ nav {
 
 .body {
     display: flex;
+    background: black;
+}
+
+.body__text {
+    margin: auto;
+    padding-left: 30px;
+    width: 33%;
+}
+
+.body__header-1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: .02em;
+    font-weight: 300;
+}
+
+.body__header-2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .02em;
 }
 
 .body__pig-logo-img {
     background: black;
     width: 62%;
     margin-left: auto;
+}
+
+.body__link-headers:link {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .02em;
+    color: white;
+    font-size: 23px;
+    padding: 5px;
+}
+
+.body__link-headers:visited {
+    color: white;
+}
+
+.body__link-headers:hover {
+    background: rgb(78, 76, 76);
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: rgb(104, 103, 103);
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.footer__text {
+    margin: auto;
+    font-size: 13px;
 }
