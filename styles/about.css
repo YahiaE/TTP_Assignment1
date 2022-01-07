@@ -51,18 +51,23 @@ nav {
 .intro__text {
     margin: auto;
     text-transform: uppercase;
+    text-align: right;
+    max-width: 400px;
 }
 
 .intro__header-1 {
     font-size: 45px;
     text-transform: uppercase;
     letter-spacing: .02em;
-    text-align: center;
     font-weight: 300;
 }
 
 .intro__header-2 {
     text-transform: uppercase;
     font-weight: 400;
-    
+}
+
+.intro__para {
+    text-transform: none;
+    font-weight: 300;
 }
