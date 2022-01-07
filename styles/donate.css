@@ -1,13 +1,11 @@
 html {
 	margin: 0;
-	overflow: hidden;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 body {
     margin: 0;
     background-color: #e87979;
-    height:100%;
 }
 
 nav {
@@ -16,7 +14,8 @@ nav {
     align-items: center;
     text-align: center;
     justify-content: space-between;
-	background-color: black;
+	  background-color: rgb(104, 103, 103);
+  	box-shadow: 0px 8px 6px -6px rgba(0,0,0,.5);
 }
 
 .nav__image {
@@ -28,7 +27,6 @@ nav {
 .nav__text {
     margin-right: 35px;
     text-decoration: none;
-    /* color: #f7b5b5; */
     color: white;
     font-size: 23px;   
     font-weight: 300;

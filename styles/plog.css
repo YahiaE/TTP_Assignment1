@@ -1,36 +1,42 @@
 html {
-  font-size: 16px;
+	margin: 0;
+	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 body {
-  background-color: #e87979;
-  margin: 0;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0;
+    background-color: #e87979;
 }
 
 nav {
-  height: 90px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-  background-color: black;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background-color: rgb(104, 103, 103);
+    box-shadow: 0px 8px 6px -6px rgba(0,0,0,.5);
 }
 
 .nav__image {
-  width: 195px;
-  margin-left: 10px;
-  align-self: center;
+    width: 195px;
+    margin-left: 10px;
+    align-self: center;
 }
 
 .nav__text {
-  margin-right: 35px;
-  text-decoration: none;
-  color: white;
-  font-size: 23px;   
-  font-weight: 300;
-  letter-spacing: .03em;
-  padding: 10px;
+    margin-right: 35px;
+    text-decoration: none;
+    color: white;
+    font-size: 23px;   
+    font-weight: 300;
+    letter-spacing: .03em;
+    padding: 10px;
+}
+
+.nav__text:hover {
+    background: rgb(78, 76, 76);
+    border-radius: 5px;
 }
 
 /* ------------------------------------------------------------------- */
