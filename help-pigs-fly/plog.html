@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/png" href="../images/favicon-16x16.png">
         <meta charset="UTF-8">
         <title>Plog Page</title>
         <link href="../styles/plog.css" rel="stylesheet">
     </head>
 
-    <script>
-        function post() {
-            input.innerText
-            //finish this function, look up innerText, pull input from chatbox (textarea) and post it to post window
-        }
-        document.getElementById("input__box")
-    </script>
-
     <body>
+        
         <nav class="nav">
             <img class="nav__image" src="../images/pwing-logo-words.png" alt="pwing logo">
             <div>
@@ -25,17 +21,33 @@
             </div>
         </nav>
 
-        <div class="chat">
-            <div class="post__window">
-                <h1>stuff</h1>
-            </div>
-
-            <div class="msg__window" id="input__box">
-                <h1 class="chat-header">Chat</h1>
-                <textarea class="chat__box" placeholder="Type message.." required></textarea>
-
-                <button type="submit" class="btn">Oink</button>        
-            </div>
+        <div class="header">
+            <h1>Plog Page</h1>
         </div>
+
+        <div class="post__window">
+            <p class="output" id="output1"></p>
+        </div>
+
+        <div class="msg__window">
+            <h1 class="chat__header">What's Your Favorite Part About Pigs?</h1>
+            <input type="text" class="chat__box" id="textArea" placeholder="type here..." required></input>
+            <input type="button" value="Oink" class="btn" id="btn1">        
+        </div>
+         
+        <script>
+            const txt = document.getElementById("textArea")
+            const btn1 = document.getElementById("btn1");
+            const output1 = document.getElementById("output1")
+     
+            function print() {
+                output1.innerHTML = txt.value;
+                txt.value = "";
+            }
+     
+            btn1.addEventListener('click', print);
+            
+         </script>
+
     </body>
 </html>

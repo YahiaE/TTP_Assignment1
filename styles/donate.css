@@ -16,6 +16,7 @@ nav {
     align-items: center;
     text-align: center;
     justify-content: space-between;
+	background-color: black;
 }
 
 .nav__image {

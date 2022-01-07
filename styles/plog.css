@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #e87979;
   margin: 0;
@@ -31,45 +35,49 @@ nav {
 
 /* ------------------------------------------------------------------- */
 
-.chat {
+.header {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin: 50px;
 }
 
 .post__window {
+  color: white;
+  background-color: #e6a5a5;
+  border: 2px solid white;
+  padding: 0px 100px 100px 20px;
+  margin: 100px 300px 100px 300px;
+  border-radius: 15px;
+}
 
-  border-style: solid;
-  border-width: 5px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 100px;
-  /* margin-bottom: 100px; */
+.output {
+  font-size: 30px;
 }
 
 .msg__window {
   background-color: #e6a5a5;
   text-align: center;
-  text-decoration: underline;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0px 300px 0px 300px;
+  padding: 0px 50px 0px 50px;
   /* margin-top: 100px; */
-  margin-bottom: 100px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
+  /* margin-bottom: 200px; */
+  border: 2px solid white; 
   border-spacing: 100px;
+  border-radius: 15px;
 }
  
 .chat__box {
-  /* margin-left: 150px;
-  margin-right: 150px; */
-  margin-bottom: auto;
+  margin-bottom: 10px;
   width: 98%;
+  
 }
 
-.chat-header {
-   
+.chat__header {
+  color: white;
 }
 
 .btn {
-
+  margin: 10px 10px 10px 10px;
 }
 
