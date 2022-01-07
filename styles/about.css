@@ -15,7 +15,8 @@ nav {
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb(104, 103, 103);
+    box-shadow: 0px 8px 6px -6px rgba(0,0,0,.5);
 }
 
 .nav__image {
@@ -52,7 +53,7 @@ nav {
     margin: auto;
     text-transform: uppercase;
     text-align: right;
-    max-width: 400px;
+    max-width: 490px;
 }
 
 .intro__header-1 {
@@ -70,4 +71,15 @@ nav {
 .intro__para {
     text-transform: none;
     font-weight: 300;
+    font-size: 20px;
+}
+
+.body {
+    display: flex;
+}
+
+.body__pig-logo-img {
+    background: black;
+    width: 62%;
+    margin-left: auto;
 }
