@@ -5,22 +5,28 @@ body {
 }
 
 nav {
-  height: 60px;
+  height: 90px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: space-between;
+  background-color: black;
 }
 
 .nav__image {
-  size: 100px;
+  width: 195px;
+  margin-left: 10px;
+  align-self: center;
 }
 
 .nav__text {
-  margin-right: 10px;
+  margin-right: 35px;
   text-decoration: none;
-  color: rgb(173, 76, 76);
-    
+  color: white;
+  font-size: 23px;   
+  font-weight: 300;
+  letter-spacing: .03em;
+  padding: 10px;
 }
 
 /* ------------------------------------------------------------------- */
